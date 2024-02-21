@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameoflife.HelloController">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onStepClick" prefWidth="80.0" text="Step" />
+            <CheckBox fx:id="Auto" mnemonicParsing="false" onAction="#onAutoClick" text="Auto" />
+            <Slider fx:id="slider" blockIncrement="5.0" max="50.0" min="1.0" value="25.0" />
+            <Label fx:id="count" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#onClearClick" prefWidth="80.0" text="Clear" />
+            <Button mnemonicParsing="false" onAction="#onRandomClick" prefWidth="80.0" text="Random" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Pane fx:id="pane" prefHeight="680.0" prefWidth="680.0" style="-fx-background-color: white; -fx-border-color: gray;" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
